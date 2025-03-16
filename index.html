@@ -4,53 +4,159 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lapatrada's Portfolio</title>
+    <title>Lapatrada Dangsungnoen - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #222;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        section {
+            padding: 40px;
+            margin: auto;
+            max-width: 900px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            border-bottom: 2px solid #444;
+            padding-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        .project {
+            margin-bottom: 20px;
+            padding: 10px;
+            border-left: 4px solid #007BFF;
+            background: #f9f9f9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <h1>Lapatrada Dangsungnoen</h1>
+        <p>Machine Learning & Web Development Enthusiast</p>
+    </header>
 
     <nav>
         <ul>
+            <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#awards">Awards</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <header>
-        <h1>Lapatrada's Portfolio</h1>
-    </header>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am passionate about the intersection of web development and machine learning, with a focus on Flask and
+            Explainable AI (XAI). Constantly seeking to broaden my expertise and acquire new skills, I am committed to
+            contributing to innovative research projects and advancing my knowledge of backend development.</p>
+    </section>
 
     <section id="skills">
-        <h2>🛠 Skills</h2>
+        <h2>Skills</h2>
         <ul>
-            <li>Skill 1</li>
-            <li>Skill 2</li>
-            <li>Skill 3</li>
+            <li>Machine Learning & AI: TensorFlow, PyTorch, SHAP Algorithm</li>
+            <li>Computer Vision: YOLO, EfficientNet</li>
+            <li>Web Development: Flask, HTML, JavaScript</li>
+            <li>Gemini API Development: LangChain APIs</li>
+            <li>Agentic AI: LangGraph</li>
+            <li>Programming Languages: Python, R, SQL, JavaScript, HTML, Swift</li>
         </ul>
     </section>
 
     <section id="projects">
-        <h2>🚀 Projects</h2>
+        <h2>Projects</h2>
         <div class="project">
-            <h3>Project Title</h3>
-            <p>Short description.</p>
+            <h3>OPG-SHAP: A Dental AI Tool</h3>
+            <p>Developed a dental AI tool integrating YOLO-based object detection and SHAP framework for explainable AI.
+            </p>
+        </div>
+        <div class="project">
+            <h3>DeepBET: Surface Area Estimation</h3>
+            <p>Implemented EfficientNet to estimate BET surface area of carbon using SEM images.</p>
         </div>
     </section>
 
     <section id="awards">
-        <h2>🏆 Awards</h2>
+        <h2>Awards & Achievements</h2>
         <ul>
-            <li>Award Title (Year)</li>
+            <li>Swift Student Challenge 2021, 2022</li>
+            <li>Collaborative Initiative Agent (CIA), Cryptocurrency project - IFMSA Thailand 2021</li>
+            <li>The 26th National Software Contest: NSC 2024</li>
+            <li>I - New Gen Award 2025 (Gold Medal)</li>
         </ul>
     </section>
 
-    <footer>
-        <p>© 2025 Lapatrada. All rights reserved.</p>
-    </footer>
+    <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li><a href="https://ieeexplore.ieee.org/abstract/document/10628217">DeepBET: Estimating the Surface Area of
+                    Plant Carbon</a></li>
+            <li><a href="https://ieeexplore.ieee.org/abstract/document/10212606">OPG-SHAP: A Dental AI Tool</a></li>
+        </ul>
+    </section>
 
-    <script src="script.js"></script>
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:Lapatrada.d@kkumail.com">Lapatrada.d@kkumail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/lapatrada-dangsungnoen-a15639264/">Lapatrada Dangsungnoen</a>
+        </p>
+    </section>
+
+    <footer>
+        <p>© 2025 Lapatrada Dangsungnoen. All rights reserved.</p>
+    </footer>
 </body>
 
 </html>
