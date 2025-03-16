@@ -93,6 +93,22 @@
             background-color: #764ba2;
         }
 
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .skill {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1 1 calc(33.333% - 20px);
+            text-align: center;
+            font-weight: bold;
+        }
+
         .projects {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -132,7 +148,7 @@
 <body>
     <header>
         <h1>Lapatrada Dangsungnoen</h1>
-        <p>A passionate developer focused on machine learning, web development, and software engineering solutions</p>
+        <p>Machine Learning & Web Development Enthusiast</p>
         <a href="#projects" class="btn">View My Work</a>
     </header>
 
@@ -147,8 +163,19 @@
 
     <section id="about" class="hero">
         <h1>About Me</h1>
-        <p>I am passionate about AI, Explainable AI, and web development. My work bridges the gap between AI research
-            and user-friendly applications.</p>
+        <p>A passionate developer focused on machine learning, web development, and software engineering solutions.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+            <div class="skill">Machine Learning & AI (TensorFlow, PyTorch, SHAP Algorithm)</div>
+            <div class="skill">Computer Vision (YOLO, EfficientNet)</div>
+            <div class="skill">Web Development (Flask, HTML, JavaScript)</div>
+            <div class="skill">Gemini API Development (LangChain APIs)</div>
+            <div class="skill">Agentic AI (LangGraph)</div>
+            <div class="skill">Programming Languages (Python, R, SQL, JavaScript, HTML, Swift)</div>
+        </div>
     </section>
 
     <section id="projects">
@@ -172,7 +199,7 @@
         <p>Email: <a href="mailto:Lapatrada.d@kkumail.com">Lapatrada.d@kkumail.com</a></p>
         <p>
             <a href="https://www.linkedin.com/in/lapatrada-dangsungnoen-a15639264/"><i class="fab fa-linkedin"></i></a>
-            <a href="mailto:Lapatrada.d@kkumail.com"><i class="fas fa-envelope"></i></a>
+            <a href="mailto:lapatrada.d@kkumail.com"><i class="fas fa-envelope"></i></a>
         </p>
     </section>
 
