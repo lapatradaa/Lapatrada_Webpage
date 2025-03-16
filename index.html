@@ -6,75 +6,125 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lapatrada Dangsungnoen - Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: #f8f9fa;
             color: #333;
         }
 
         header {
-            background-color: #222;
+            background: linear-gradient(to right, #667eea, #764ba2);
             color: white;
-            padding: 20px;
+            padding: 50px;
             text-align: center;
         }
 
         nav {
-            background-color: #333;
-            text-align: center;
-            padding: 10px 0;
+            display: flex;
+            justify-content: center;
+            background-color: white;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
         }
 
         nav ul {
             list-style: none;
-            padding: 0;
+            display: flex;
+            gap: 30px;
         }
 
         nav ul li {
             display: inline;
-            margin: 0 15px;
         }
 
         nav ul li a {
-            color: white;
             text-decoration: none;
+            color: #333;
             font-weight: bold;
+            font-size: 16px;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #764ba2;
         }
 
         section {
-            padding: 40px;
+            max-width: 1100px;
             margin: auto;
-            max-width: 900px;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            margin-bottom: 20px;
+            padding: 50px 20px;
         }
 
-        h2 {
-            border-bottom: 2px solid #444;
-            padding-bottom: 10px;
-        }
-
-        ul {
-            padding-left: 20px;
-        }
-
-        .project {
-            margin-bottom: 20px;
-            padding: 10px;
-            border-left: 4px solid #007BFF;
-            background: #f9f9f9;
-        }
-
-        footer {
+        .hero {
             text-align: center;
-            padding: 20px;
-            background-color: #222;
+            padding: 80px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 700;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            font-size: 16px;
+            font-weight: bold;
             color: white;
+            background-color: #667eea;
+            border-radius: 25px;
+            text-decoration: none;
+            transition: background 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #764ba2;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+        }
+
+        .contact {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .contact a {
+            font-size: 20px;
+            margin: 0 10px;
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .contact a:hover {
+            color: #764ba2;
         }
     </style>
 </head>
@@ -83,6 +133,7 @@
     <header>
         <h1>Lapatrada Dangsungnoen</h1>
         <p>Machine Learning & Web Development Enthusiast</p>
+        <a href="#projects" class="btn">View My Work</a>
     </header>
 
     <nav>
@@ -90,69 +141,38 @@
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#awards">Awards</a></li>
-            <li><a href="#publications">Publications</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am passionate about the intersection of web development and machine learning, with a focus on Flask and
-            Explainable AI (XAI). Constantly seeking to broaden my expertise and acquire new skills, I am committed to
-            contributing to innovative research projects and advancing my knowledge of backend development.</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Machine Learning & AI: TensorFlow, PyTorch, SHAP Algorithm</li>
-            <li>Computer Vision: YOLO, EfficientNet</li>
-            <li>Web Development: Flask, HTML, JavaScript</li>
-            <li>Gemini API Development: LangChain APIs</li>
-            <li>Agentic AI: LangGraph</li>
-            <li>Programming Languages: Python, R, SQL, JavaScript, HTML, Swift</li>
-        </ul>
+    <section id="about" class="hero">
+        <h1>About Me</h1>
+        <p>I am passionate about AI, Explainable AI, and web development. My work bridges the gap between AI research
+            and user-friendly applications.</p>
     </section>
 
     <section id="projects">
-        <h2>Projects & Research Papers</h2>
-        <div class="project">
-            <h3>OPG-SHAP: A Dental AI Tool</h3>
-            <p>Developed a dental AI tool integrating YOLO-based object detection and SHAP framework for explainable AI.
-            </p>
-            <a href="https://ieeexplore.ieee.org/abstract/document/10628217">Read More</a>
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-card">
+                <h3>OPG-SHAP: A Dental AI Tool</h3>
+                <p>Enhancing interpretability in dental AI using SHAP and YOLO-based object detection.</p>
+                <a href="https://ieeexplore.ieee.org/abstract/document/10628217">Read More</a>
+            </div>
+            <div class="project-card">
+                <h3>DeepBET: Surface Area Estimation</h3>
+                <p>Using deep learning to estimate the BET surface area of carbon with SEM images.</p>
+                <a href="https://ieeexplore.ieee.org/abstract/document/10212606">Read More</a>
+            </div>
         </div>
-        <div class="project">
-            <h3>DeepBET: Surface Area Estimation</h3>
-            <p>Implemented EfficientNet to estimate BET surface area of carbon using SEM images.</p>
-            <a href="https://ieeexplore.ieee.org/abstract/document/10212606">Read More</a>
-        </div>
     </section>
 
-    <section id="awards">
-        <h2>Awards & Achievements</h2>
-        <ul>
-            <li>Swift Student Challenge 2021, 2022</li>
-            <li>Collaborative Initiative Agent (CIA), Cryptocurrency project - IFMSA Thailand 2021</li>
-            <li>The 26th National Software Contest: NSC 2024</li>
-            <li>I - New Gen Award 2025 (Gold Medal)</li>
-        </ul>
-    </section>
-
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li><a href="https://ieeexplore.ieee.org/abstract/document/10628217">DeepBET: Estimating the Surface Area of
-                    Plant Carbon</a></li>
-            <li><a href="https://ieeexplore.ieee.org/abstract/document/10212606">OPG-SHAP: A Dental AI Tool</a></li>
-        </ul>
-    </section>
-
-    <section id="contact">
+    <section id="contact" class="contact">
         <h2>Contact</h2>
         <p>Email: <a href="mailto:Lapatrada.d@kkumail.com">Lapatrada.d@kkumail.com</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/lapatrada-dangsungnoen-a15639264/">Lapatrada Dangsungnoen</a>
+        <p>
+            <a href="https://www.linkedin.com/in/lapatrada-dangsungnoen-a15639264/"><i class="fab fa-linkedin"></i></a>
+            <a href="mailto:Lapatrada.d@kkumail.com"><i class="fas fa-envelope"></i></a>
         </p>
     </section>
 
